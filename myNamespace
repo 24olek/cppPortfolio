@@ -1,0 +1,25 @@
+//This code presents definition of namespace containing template and overloaded functions.
+#pragma once
+#include <iostream>
+#include <string>
+using namespace std;
+namespace myNamespace {
+	template<typename T>
+	void swapValues(T first, T second) {
+		T temp = first;
+		first = second;
+		second = temp;
+	}
+	int maxOfTwo(int first, int second) {
+		return (first > second) ? first : second;
+	}
+	string maxOfTwo(string first, string second) {
+		return (first > second) ? first : second;
+	}
+	double maxOfTwo(double first, double second) {
+		return (first > second) ? first : second;
+	}
+	float maxOfTwo(float first, float second) {
+		return (first > second) ? first : second;
+	}
+}
